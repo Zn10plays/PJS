@@ -28,7 +28,8 @@ function listen(message) {
     console.log(`${message.author.tag} said: ${message.content}`)
     if (cmd=='example') {
       let example = args[0]
-      if (config.example[example]) msg.channel.send(config.example[example])
+      let exEmbed = new Discord.MessageEmbed(config.example[example])
+      if (exEmbed) msg.channel.send(exEmbed)
       else {message.channel.send("The requested example was not found.")}
     }
         
