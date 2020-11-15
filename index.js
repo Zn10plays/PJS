@@ -44,7 +44,7 @@ function listen(message) {
       message.channel.send('Deleated '+args[0]+' messages')
     }else if (cmd=='avatar') {
       if (args.length > 0) {
-        client.users.fetch(args[2])
+        client.users.fetch(args[0])
         .then( user => {
         message.channel.send(user.displayAvatarURL());
       })
