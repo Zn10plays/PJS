@@ -1,0 +1,69 @@
+{
+"example":{
+    "test":{"title":"bruh", "description":"does this work"},
+    "pathfinder":{
+        "title":"Pathfinder Example",
+        "description":"```js\nbot.on('chat',(username, message) => {\n \n const args = message.split(' ')\n if (args[0]!= goto) return\n \n const x = parseInt(args[1])\n const y = parseInt(args[2])\n const z = parseInt(args[3])\nconst goal = new GoalBlock(x,y,z) //make a goal \n \nbot.pathfinder.goto(goal)\n}) \n``` \n \n useage *goto x y z*",
+        "color":"#27E383",
+        "footer":{
+            "text":"Thanks to TheDudeFromCI (AI irl) and Rom1504 for the code."
+        },
+        "fields":[
+            {
+                "name":"See GitHub for Documantion", 
+                "value":"[Mineflayer Pathfinder](https://github.com/PrismarineJS/mineflayer-pathfinder)"
+            }
+        ]
+    },
+    "sleep":{
+        "title":"Sleeping example",
+        "description":"```js\nfunction sleep() {\n \n const bed = bot.findBlock({\n  matching:block => bot.isAbed(block)\n }) \n \n if (!bed) return console.log('no bed') \n bot.sleep(bed, (err) => {\n  if (err) {\n    console.log(`Can't sleep: ${err.message}`)\n }) \n})\n```",
+        "color":"#27E383",
+        "footer":{
+            "text":"Thanks to Rom for the code."
+        },
+        "fields":[ 
+            {
+                "name":"See GitHub for Documantion",
+                "value":"[Mineflayer Documantion](https://github.com/PrismarineJS/mineflayer)"
+            }
+        ]
+    },
+    "pvp":{
+        "title":"PvE example",
+        "description":"First you will need to install the pvp plugin:\n`npm install --save mineflayer-pvp`\n Than you can use it Ex:```js\nbot.loadPlugin(pvp)\n\nfunction fight() { \n const filter = e => e.type === 'mob'\n\n const entity = bot.nearestEntity(filter)\n if (entity) {\n  bot.pvp.attack(entity)\n }\n}\n```",
+        "color":"#27e383",
+        "footer":{
+            "text":"Thanks to TheDudeFromCI (AI irl) for the code."
+        },
+        "fields":[
+            {
+                "name":"See GitHub for Documantion",
+                "value":"[Mineflayer PvP Plugin](https://github.com/PrismarineJS/mineflayer-pvp)"
+            }
+        ]
+    },
+    "chat":{
+        "title":"The Chat Event",
+        "description":"This event returns username as the first regex match and message as the second match. The type argument is only used for server event messages like player joining, disconnected, etc. The rawMessage is the raw string the server sent. The matches is the regex.matches object containing all matches.\nExample:\n```js\nbot.on('chat', (username, message, type, rawMessage, matches) => {\n if (username === bot.username) return\n console.log('Chat received!')\n console.log(`Username: ${username}`)\n console.log(`Message: ${message}`)\n})\n```",
+        "color":"#27E383",
+        "fields":[
+            {
+                "name":"See GitHub for Documantion",
+                "value":"[Mineflayer Chat](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#chat-username-message-translate-jsonmsg-matches)",
+                "inline":true
+            },
+            {
+                "name":"Also see",
+                "value":"[Mineflayer Events](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md)",
+                "inline":true
+            }
+        ]
+    }
+},
+"code":{
+    "title":"Code Style",
+    "description":"If you want to share your code it is a good idea to do it like this: \n\n \\`\\`\\`js\nconst code = 'mycode' \n\\`\\`\\`\n\n Sending your code like this will give a output like:\n```js\nconst code = 'mycode' \n```  \n This makes it easier for people to see your code, and help you with your request.",
+    "color":"#EEEE09"
+}
+}
