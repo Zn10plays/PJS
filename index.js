@@ -41,7 +41,6 @@ function listen(message) {
     }else if (cmd=='test'){
       message.channel.send(test)
       console.log('message sent')
-    }
   }
 }
 
