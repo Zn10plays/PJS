@@ -28,9 +28,12 @@ function listen(message) {
     console.log(`${message.author.tag} said: ${message.content}`)
     if (cmd=='example') {
       let example = args[0]
+      if (!example) {
+        message.channel.send("The requested example was not found.")
+        return;              
+      }
       let exEmbed = new Discord.MessageEmbed(config.example[example])
       if (exEmbed) message.channel.send(exEmbed)
-      else {message.channel.send("The requested example was not found.")}
     }
         
     }else if (cmd=='codeFont') {
