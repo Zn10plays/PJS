@@ -58,4 +58,4 @@ function listen(message) {
 client.on('message', (message) => listen(message))
 
 // Log our bot in using the token from https://discord.com/developers/application
-client.login('NzYzMTM2NTA3OTIwOTA4MzA5.X3zUQQ.K4IwDcHjNSZ6uJx-UTUSTcEHp9g');
+client.login('');
