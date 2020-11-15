@@ -1,2 +1,2 @@
 # PJS
-A discord bot for PrismarineJS0
+A discord bot for PrismarineJS
