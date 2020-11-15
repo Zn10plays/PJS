@@ -1,0 +1,27 @@
+{
+  "name": "prismarinebot",
+  "version": "1.0.0",
+  "description": "Discord bot for PrismarineJS",
+  "main": "src/index.js",
+  "repository": "https://github.com/Zn10plays/PJS",
+  "author": "Chace C, arandomassguy, dada513",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "discord.js-commando": "https://github.com/discordjs/Commando",
+    "nconf": "^0.10.0"
+  },
+  "scripts": {
+    "dev": "babel-node src/index.js",
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1",
+    "nodemon": "^2.0.6",
+    "standard": "^16.0.2"
+  }
+}
