@@ -35,8 +35,7 @@ function listen(message) {
       let exEmbed = new Discord.MessageEmbed(config.example[example])
       if (exEmbed) message.channel.send(exEmbed)
     }
-        
-    }else if (cmd=='codeFont') {
+    else if (cmd=='codeFont') {
       message.channel.send(font)
     }else if (cmd=='purge') {
       if (!args[0]) return message.channel.send('wrong args')
