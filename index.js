@@ -18,6 +18,7 @@ let font = new Discord.MessageEmbed(config.code)
 
 
 
+
 function listen(message) {
   if (!whitelist.includes(message.author.id)) return
   let args = message.content.split(' ');
@@ -36,15 +37,21 @@ function listen(message) {
       if (exEmbed) message.channel.send(exEmbed)
     }
     else if (cmd=='codeFont') {
-      message.channel.send(font)
+      message.channel.send(new Discord.MessageEmbed(config.code))
     }else if (cmd=='purge') {
       if (!args[0]) return message.channel.send('wrong args')
       message.channel.bulkDelete(args[0])
       message.channel.send('Deleated '+args[0]+' messages')
+    }else if (cmd=='avatar') {
+      if (args.length > 0) {
+        client.users.fetch(args[2])
+        .then( user => {
+        message.channel.send(user.displayAvatarURL());
+      })
+      } else {message.channel.send(message.author.displayAvatarURL())}
     }
   } 
 }
-
 
 client.on('message', (message) => listen(message))
 
