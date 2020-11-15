@@ -9,10 +9,11 @@
   "dependencies": {
     "discord.js": "^12.4.1",
     "discord.js-commando": "https://github.com/discordjs/Commando",
-    "nconf": "^0.10.0"
+    "nconf": "^0.10.0",
+    "object-foreach": "^0.1.2"
   },
   "scripts": {
-    "dev": "babel-node src/index.js",
+    "dev": "nodemon",
     "start": "babel-node src/index.js",
     "lint": "standard",
     "fix": "standard --fix"
