@@ -13,13 +13,13 @@ client.on('ready', () => {
 
 
 
-
+const whitelist = ['put','our','ids','here']
 let font = new Discord.MessageEmbed(config.code)
 
 
 
 function listen(message) {
-  if (message.author.id!='336575271144783872') return
+  if (!whitelist.includes(message.author.id)) return
   let args = message.content.split(' ');
   args.shift()
   let cmd = args[0]
