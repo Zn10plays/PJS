@@ -28,7 +28,7 @@ function listen(message) {
     console.log(`${message.author.tag} said: ${message.content}`)
     if (cmd=='example') {
       let example = args[0]
-      if (!example) {
+      if (!config.example[example]) {
         message.channel.send("The requested example was not found.")
         return;              
       }
