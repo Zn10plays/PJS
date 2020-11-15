@@ -41,11 +41,10 @@ function listen(message) {
       if (!args[0]) return message.channel.send('wrong args')
       message.channel.bulkDelete(args[0])
       message.channel.send('Deleated '+args[0]+' messages')
-    }else if (cmd=='test'){
-      message.channel.send(test)
-      console.log('message sent')
-  }
+    }
+  } 
 }
+
 
 client.on('message', (message) => listen(message))
 
