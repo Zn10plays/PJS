@@ -21,10 +21,10 @@ let font = new Discord.MessageEmbed(config.code)
 function listen(message) {
   if (message.author.id!='336575271144783872') return
   let args = message.content.split(' ');
+  args.shift()
+  let cmd = args[0]
+  args.shift()
   if (message.content.startsWith('$pjs')) {
-    args.shift()
-    let cmd = args[0]
-    args.shift()
     console.log(`${message.author.tag} said: ${message.content}`)
     if (cmd=='example') {
       let example = args[0]
