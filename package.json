@@ -13,6 +13,7 @@
   },
   "scripts": {
     "dev": "babel-node src/index.js",
+    "start": "babel-node src/index.js",
     "lint": "standard",
     "fix": "standard --fix"
   },
