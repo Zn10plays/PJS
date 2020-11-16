@@ -89,7 +89,7 @@
     },
     "viewer": {
       "title": "**Prismarine Viewer**",
-      "discription": "Thanks to prismarine-viewer project, it's possible to display in a browser window what your bot is doing. Just run `npm install prismarine-viewer` and add this to your bot:\n```js\n const mineflayerViewer = require('prismarine-viewer').mineflayer\n bot.once('spawn', () => {\n  mineflayerViewer(bot, { port: 3007, firstPerson: true })\n })\n form here you can open a web browser and serch localhost/3007 and there you should see somthing like:",
+      "description": "Thanks to prismarine-viewer project, it's possible to display in a browser window what your bot is doing. Just run `npm install prismarine-viewer` and add this to your bot:\n```js\n const mineflayerViewer = require('prismarine-viewer').mineflayer\n bot.once('spawn', () => {\n  mineflayerViewer(bot, { port: 3007, firstPerson: true })\n })\n form here you can open a web browser and serch localhost/3007 and there you should see somthing like:",
       "color": "#27E383",
       "image": {
         "url": "https://prismarine.js.org/prismarine-viewer/test_1.13.2.png"
