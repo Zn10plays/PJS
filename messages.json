@@ -4,6 +4,25 @@
       "title": "Code Style",
       "description": "If you want to share your code it is a good idea to do it like this: \n\n \\`\\`\\`js\nconst code = 'mycode' \n\\`\\`\\`\n\n Sending your code like this will give a output like:\n```js\nconst code = 'mycode' \n```  \n This makes it easier for people to see your code, and help you with your request.",
       "color": "#EEEE09"
+    },
+    "tutorials": {
+      "title": "Mineflayer Tutorials",
+      "color": "#27E383",
+      "fields": [
+        {
+          "name": "Youtube tutorials",
+          "value": "[YouTube Playlist](https://www.youtube.com/playlist?list=PLh_alXmxHmzGy3FKbo95AkPp5D8849PEV)\n[Github Repo](https://github.com/TheDudeFromCI/Mineflayer-Youtube-Tutorials)\nThanks to <@!200715588174086145>"
+        },
+        {
+          "name": "Text Tutorial",
+          "value": "[PrismarineJS/mineflayer/docs/tutorial.md](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md)"
+        }
+      ]
+    },
+    "add-snippets": {
+      "title": "Adding snippets",
+      "color": "#27E383",
+      "description": "Edit [messages.json](https://github.com/Zn10plays/PJS/blob/main/messages.json) on our [Github Repo](https://github.com/Zn10plays/PJS)"
     }
   },
 
