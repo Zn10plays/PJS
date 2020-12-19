@@ -24,7 +24,7 @@ version: "3.8"
 
 services:
   PJS:
-    build: https://github.com/Zn10plays/PJS
+    image: dada513/pjs-bot
     environment:
       - TOKEN=replace_this
       - PREFIX=$pjs
