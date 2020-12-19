@@ -23,7 +23,7 @@ version: "3.8"
 # Tip: Since this does not store any data, you don't have to add volumes
 
 services:
-  PJS:
+  pjs:
     image: dada513/pjs-bot
     environment:
       - TOKEN=replace_this
