@@ -97,14 +97,16 @@
       "fields": {
         "name": "See Github for Documantion",
         "value": "https://github.com/PrismarineJS/prismarine-viewer"
-      },
-    "mcData":{
-      "title":"**Minecraft Data**",
-      "description":"mcData contains important info about minecraft blocks, entities, and items. You can implement mcData in your code like this:\n```js\n const mcData = require('minecraft-data')(bot.version)\n\n const tntID = mcData.entitiesByName.PrimedTnt.id\n const wood = mcData.blockByName.oak_log.id\n const woodenPickaxe =  mcData.itemByName.wood_pickaxe.id\n```",
-      "color":"#27E383",
-      "fields":{
-        "name":"See GitHub for Documantion",
-        "value":"[Minecraft Data](https://github.com/PrismarineJS/node-minecraft-data)"
+      }
+    },
+    "mcData": {
+      "title": "**Minecraft Data**",
+      "description": "mcData contains important info about minecraft blocks, entities, and items. You can implement mcData in your code like this:\n```js\n const mcData = require('minecraft-data')(bot.version)\n\n const tntID = mcData.entitiesByName.PrimedTnt.id\n const wood = mcData.blockByName.oak_log.id\n const woodenPickaxe =  mcData.itemByName.wood_pickaxe.id\n```",
+      "color": "#27E383",
+      "fields": {
+        "name": "See GitHub for Documantion",
+        "value": "[Minecraft Data](https://github.com/PrismarineJS/node-minecraft-data)"
+      }
     }
   }
 }
